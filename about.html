@@ -1,119 +1,318 @@
-<main class="container-fluid">
-  <section class="row container-about">
-    <div class="col my-5 mx-5">
-      <h2 class="text-center my-4 text-main">ABOUT</h2>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="About the Fortefyre field-card modification of the Yu-Gi-Oh! Forbidden Memories Fusion Calculator"
+    />
+    <meta
+      name="keywords"
+      content="Yu-Gi-Oh!, Forbidden Memories, Fusion Calculator, Fortefyre, Field Cards"
+    />
+    <meta name="robots" content="index, follow" />
 
-      <p>
-        Yu-Gi-Oh! Forbidden Memories is a terrible game with a terrible mechanic
-        called "fusions." Fusions allow the player to combine two cards to create
-        a new, hopefully more powerful card.
-      </p>
+    <title>About the Field Calculator</title>
 
-      <p>
-        Naturally, because it is a terrible game, Forbidden Memories does almost
-        nothing to explain which cards fuse together. With more than 700 cards,
-        discovering useful combinations through trial and error becomes tedious
-        very quickly.
-      </p>
+    <link rel="icon" type="image/x-icon" href="public/images/yugioh.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
 
-      <h3 class="mt-5 text-main">THE ORIGINAL PROJECT</h3>
+    <link rel="stylesheet" type="text/css" href="public/styles/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="public/styles/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="public/styles/home.css" />
+    <link rel="stylesheet" type="text/css" href="public/styles/about.css" />
+  </head>
 
-      <p>
-        This website is a modified fork of the
-        <a
-          href="https://github.com/Solumin/YGO-FM-FusionCalc"
-          rel="noopener noreferrer"
-          target="_blank"
-        >YGO-FM Fusion Calculator</a>
-        originally created by
-        <a
-          href="https://github.com/Solumin"
-          rel="noopener noreferrer"
-          target="_blank"
-        >Solumin</a>.
-      </p>
+  <body class="about-page d-flex flex-column min-vh-100">
+    <header class="navbar navbar-expand-lg navbar-light bg-light flex-column flex-md-row">
+      <a class="navbar-brand text-truncate" href="index.html">
+        <img
+          class="img-fluid ml-4"
+          id="logo"
+          src="public/images/logo.png"
+          alt="Yu-Gi-Oh! Forbidden Memories Logo"
+        />
+      </a>
 
-      <p>
-        The original calculator was inspired by Giver336's Let's Play of the
-        game on Something Awful. During the playthrough, co-commentator General
-        Yeti suggested the possibility of a program that could find card fusions
-        automatically. Solumin took that idea and created the original project.
-      </p>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon d-md-none p-0 mx-2 collapsed"></span>
+      </button>
 
-      <h3 class="mt-5 text-main">THE FORTEFYRE MODIFICATION</h3>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="fusion-search.html">Fusion Search</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="fusion-calculator.html">Fusion Calculator</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link text-dark" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="btn btn-bd btn-thread"
+              href="http://forums.somethingawful.com/showthread.php?threadid=3783156"
+              rel="noopener noreferrer"
+              target="_blank"
+            >Thread</a>
+          </li>
+        </ul>
+      </div>
+    </header>
 
-      <p>
-        This version was modified by Fortefyre because he's bad at the game and
-        wanted the calculator to include cards that are already on the field.
-      </p>
+    <main>
+      <section class="about-hero">
+        <div class="container py-5">
+          <div class="about-hero-content">
+            <p class="about-kicker">A FIELD-AWARE FORK</p>
+            <h1>THE CALCULATOR FOR PEOPLE WHO FORGOT THEY ALREADY PLAYED CARDS</h1>
+            <p class="about-lead">
+              A modified version of Solumin's Yu-Gi-Oh! Forbidden Memories Fusion
+              Calculator, expanded by Fortefyre to include cards already sitting
+              on the field.
+            </p>
 
-      <p>
-        The original calculator supports all five cards in the player's hand.
-        This modified version adds five additional field-card slots and checks
-        possible combinations between cards in the hand and cards currently in
-        play.
-      </p>
+            <div class="about-actions">
+              <a class="btn btn-primary btn-lg" href="fusion-calculator.html">
+                Use the Calculator
+              </a>
+              <a
+                class="btn btn-outline-light btn-lg"
+                href="https://github.com/rustongilmore-byte/YGO-FM-FusionCalcFieldExp"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                View the Fork
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <p>
-        Fortefyre did not create the original calculator, fusion database, card
-        database, design, or underlying project. He forked the existing project
-        and expanded its calculator functionality to account for field cards.
-      </p>
-    </div>
-  </section>
+      <section class="about-content-section">
+        <div class="container py-5">
+          <div class="section-heading">
+            <p class="about-kicker">WHERE IT CAME FROM</p>
+            <h2>THE ORIGINAL PROJECT</h2>
+          </div>
 
-  <section class="row" id="container-space"></section>
+          <div class="about-grid">
+            <article class="about-card">
+              <span class="about-card-number">01</span>
+              <h3>Solumin Built the Calculator</h3>
+              <p>
+                This website is a modified fork of the
+                <a
+                  href="https://github.com/Solumin/YGO-FM-FusionCalc"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >YGO-FM Fusion Calculator</a>,
+                originally created by
+                <a
+                  href="https://github.com/Solumin"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >Solumin</a>.
+              </p>
+              <p>
+                Solumin created the original interface, fusion logic, and project
+                structure. Fortefyre did not create the original calculator.
+              </p>
+            </article>
 
-  <section class="row">
-    <div class="col my-4 mx-5">
-      <h2 class="text-center my-4 text-main">SPECIAL THANKS</h2>
+            <article class="about-card">
+              <span class="about-card-number">02</span>
+              <h3>The Idea Came From a Let's Play</h3>
+              <p>
+                The original project was inspired by Giver336's Something Awful
+                playthrough of Yu-Gi-Oh! Forbidden Memories.
+              </p>
+              <p>
+                Co-commentator General Yeti wondered whether a program could find
+                useful fusions automatically. Solumin answered that question by
+                building one.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-      <p>
-        <strong>
+      <section class="fortefyre-section">
+        <div class="container py-5">
+          <div class="fortefyre-panel">
+            <div>
+              <p class="about-kicker">THE FIELD EXPERIMENT</p>
+              <h2>WHAT FORTEFYRE CHANGED</h2>
+              <p class="fortefyre-quote">
+                “He's bad at the game, and wanted to include the field cards.”
+              </p>
+            </div>
+
+            <div class="change-list">
+              <div class="change-item">
+                <strong>Five hand slots</strong>
+                <span>The original calculator's standard hand support.</span>
+              </div>
+              <div class="change-item">
+                <strong>Five field slots</strong>
+                <span>Cards already in play can now be entered separately.</span>
+              </div>
+              <div class="change-item">
+                <strong>Hand + field checks</strong>
+                <span>
+                  The calculator checks whether a hand card can fuse with or equip
+                  a field card.
+                </span>
+              </div>
+              <div class="change-item">
+                <strong>Clear attribution</strong>
+                <span>
+                  The databases, original design, and underlying project remain
+                  credited to their original creators and contributors.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="thanks-section">
+        <div class="container py-5">
+          <div class="section-heading">
+            <p class="about-kicker">CREDITS</p>
+            <h2>SPECIAL THANKS</h2>
+            <p>
+              This fork exists because other people did the difficult work first.
+            </p>
+          </div>
+
+          <div class="credits-grid">
+            <article class="credit-card">
+              <h3>
+                <a
+                  href="https://github.com/Solumin"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >Solumin</a>
+              </h3>
+              <p>
+                Creator of the original YGO-FM Fusion Calculator and the project
+                this version is built upon.
+              </p>
+            </article>
+
+            <article class="credit-card">
+              <h3>Steve Kalynuik, Dylan Birtolo &amp; Miguel Balauag</h3>
+              <p>
+                Authors of the
+                <a
+                  href="https://www.gamefaqs.com/ps/561010-yu-gi-oh-forbidden-memories/faqs/16613"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >Fusion FAQ</a>
+                used as a source for the original calculator.
+              </p>
+            </article>
+
+            <article class="credit-card">
+              <h3>Yu-Gi-Oh! Wikia</h3>
+              <p>
+                Supplied additional information used when the original project's
+                data was assembled.
+              </p>
+            </article>
+
+            <article class="credit-card">
+              <h3>
+                <a
+                  href="https://github.com/CathodeRaymond"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >CathodeRaymond</a>
+              </h3>
+              <p>Contributed CSS work and helped style the original project.</p>
+            </article>
+
+            <article class="credit-card">
+              <h3>
+                <a
+                  href="https://github.com/duke1102"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >duke1102</a>
+              </h3>
+              <p>
+                Provided the complete card and fusion data used by the project.
+              </p>
+            </article>
+
+            <article class="credit-card forte-credit">
+              <h3>Fortefyre</h3>
+              <p>
+                Added field-card support after repeatedly forgetting that the
+                cards already on the table were, in fact, still cards.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container-fluid mt-auto">
+      <div class="row footer-bottom">
+        <div class="col text-center my-3">
+          <a class="d-inline m-0 p-0 text-decoration-none" href="index.html">
+            <img
+              loading="lazy"
+              class="millennium-pendant"
+              src="public/images/item.png"
+              alt="Millennium Pendant"
+            />
+          </a>
+
+          <p class="my-3 text-white d-inline">
+            Original calculator by Solumin © 2020 · Field-card modification by Fortefyre
+          </p>
+
           <a
-            href="https://github.com/Solumin"
+            class="d-inline m-0 p-0"
+            href="https://github.com/rustongilmore-byte/YGO-FM-FusionCalcFieldExp"
             rel="noopener noreferrer"
             target="_blank"
-          >Solumin</a>
-        </strong>
-        for creating the original YGO-FM Fusion Calculator and making the
-        project available on GitHub.
-      </p>
+          >
+            <img
+              class="gh-logo"
+              src="https://simpleicons.org/icons/github.svg"
+              alt="GitHub"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
 
-      <p>
-        <strong>Steve Kalynuik, Dylan Birtolo and Miguel Balauag</strong>,
-        authors of the
-        <a
-          href="https://www.gamefaqs.com/ps/561010-yu-gi-oh-forbidden-memories/faqs/16613"
-          rel="noopener noreferrer"
-          target="_blank"
-        >Fusion FAQ</a>,
-        and the <strong>Yu-Gi-Oh! Wikia</strong>, which provided data used in
-        the original version of the calculator.
-      </p>
-
-      <p>
-        <a
-          href="https://github.com/CathodeRaymond"
-          rel="noopener noreferrer"
-          target="_blank"
-        >CathodeRaymond</a>
-        for CSS work and for helping make the original project look good.
-      </p>
-
-      <p>
-        <a
-          href="https://github.com/duke1102"
-          rel="noopener noreferrer"
-          target="_blank"
-        >duke1102</a>
-        for providing the complete card and fusion data used by the project.
-      </p>
-
-      <p>
-        <strong>Fortefyre</strong> for adding field-card support after repeatedly
-        forgetting that cards on the field can also be used in fusions.
-      </p>
-    </div>
-  </section>
-</main>
+    <script type="text/javascript" src="public/javascripts/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="public/javascripts/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
