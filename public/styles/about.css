@@ -1,0 +1,280 @@
+:root {
+  --about-ink: rgb(30, 35, 55);
+  --about-ink-light: rgb(48, 56, 88);
+  --about-paper: rgb(245, 246, 250);
+  --about-white: rgb(255, 255, 255);
+  --about-orange: rgb(255, 134, 82);
+  --about-orange-dark: rgb(188, 67, 17);
+  --about-muted: rgb(193, 198, 216);
+}
+
+.about-page {
+  margin: 0;
+  background-color: var(--about-ink);
+  color: var(--about-white);
+}
+
+.about-page main {
+  flex: 1;
+}
+
+.about-page a {
+  color: var(--about-orange);
+}
+
+.about-page a:hover {
+  color: rgb(255, 177, 143);
+}
+
+.about-hero {
+  position: relative;
+  display: flex;
+  min-height: 560px;
+  align-items: center;
+  background:
+    linear-gradient(90deg, rgba(12, 15, 27, 0.96), rgba(30, 35, 55, 0.68)),
+    url("../images/lost_memories.jpg") center / cover no-repeat;
+  border-bottom: 5px solid var(--about-orange);
+}
+
+.about-hero-content {
+  max-width: 820px;
+  padding: 32px 0;
+}
+
+.about-kicker {
+  margin-bottom: 12px;
+  color: var(--about-orange);
+  font-family: var(--jetbrains);
+  font-size: 0.9rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.about-hero h1,
+.section-heading h2,
+.fortefyre-panel h2 {
+  font-family: var(--jetbrains);
+  font-weight: 700;
+}
+
+.about-hero h1 {
+  max-width: 900px;
+  margin-bottom: 20px;
+  font-size: clamp(2.25rem, 6vw, 4.7rem);
+  line-height: 1.02;
+}
+
+.about-lead {
+  max-width: 720px;
+  color: rgb(231, 233, 241);
+  font-size: 1.25rem;
+  line-height: 1.7;
+}
+
+.about-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.about-actions .btn-primary {
+  background-color: var(--about-orange);
+  border-color: var(--about-orange);
+  color: rgb(67, 19, 0);
+  font-weight: 700;
+}
+
+.about-actions .btn-primary:hover {
+  background-color: rgb(255, 159, 118);
+  border-color: rgb(255, 159, 118);
+}
+
+.about-content-section {
+  background-color: var(--about-paper);
+  color: var(--about-ink);
+}
+
+.section-heading {
+  max-width: 720px;
+  margin-bottom: 30px;
+}
+
+.section-heading h2 {
+  margin-bottom: 12px;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+}
+
+.section-heading p:last-child {
+  color: rgb(84, 90, 112);
+  font-size: 1.1rem;
+}
+
+.about-grid,
+.credits-grid {
+  display: grid;
+  gap: 22px;
+}
+
+.about-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.about-card,
+.credit-card {
+  border: 1px solid rgba(30, 35, 55, 0.12);
+  border-radius: 16px;
+  background-color: var(--about-white);
+}
+
+.about-card {
+  position: relative;
+  min-height: 290px;
+  padding: 32px;
+  overflow: hidden;
+}
+
+.about-card-number {
+  position: absolute;
+  top: 10px;
+  right: 22px;
+  color: rgba(30, 35, 55, 0.08);
+  font-family: var(--jetbrains);
+  font-size: 5.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.about-card h3,
+.credit-card h3 {
+  position: relative;
+  margin-bottom: 18px;
+  font-family: var(--jetbrains);
+  font-size: 1.35rem;
+}
+
+.about-card p,
+.credit-card p {
+  position: relative;
+  line-height: 1.75;
+}
+
+.fortefyre-section {
+  background:
+    linear-gradient(rgba(30, 35, 55, 0.94), rgba(30, 35, 55, 0.94)),
+    url("../images/fusion_background.jpg") center / cover fixed;
+}
+
+.fortefyre-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 42px;
+  align-items: start;
+  padding: 38px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 18px;
+  background-color: rgba(12, 15, 27, 0.72);
+}
+
+.fortefyre-quote {
+  margin-top: 22px;
+  padding-left: 20px;
+  border-left: 5px solid var(--about-orange);
+  color: rgb(241, 222, 214);
+  font-size: 1.45rem;
+  line-height: 1.55;
+}
+
+.change-list {
+  display: grid;
+  gap: 12px;
+}
+
+.change-item {
+  padding: 18px 20px;
+  border-left: 4px solid var(--about-orange);
+  background-color: rgba(255, 255, 255, 0.07);
+}
+
+.change-item strong,
+.change-item span {
+  display: block;
+}
+
+.change-item strong {
+  margin-bottom: 5px;
+  color: var(--about-white);
+  font-family: var(--jetbrains);
+}
+
+.change-item span {
+  color: var(--about-muted);
+  line-height: 1.55;
+}
+
+.thanks-section {
+  background-color: rgb(227, 230, 240);
+  color: var(--about-ink);
+}
+
+.credits-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.credit-card {
+  min-height: 205px;
+  padding: 26px;
+}
+
+.forte-credit {
+  border-top: 6px solid var(--about-orange);
+  background-color: rgb(255, 239, 231);
+}
+
+@media (max-width: 991px) {
+  .about-grid,
+  .fortefyre-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .credits-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .about-hero {
+    min-height: 500px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-hero {
+    min-height: 480px;
+  }
+
+  .about-hero-content {
+    padding: 20px 4px;
+  }
+
+  .about-actions {
+    flex-direction: column;
+  }
+
+  .about-actions .btn {
+    width: 100%;
+  }
+
+  .about-card,
+  .fortefyre-panel,
+  .credit-card {
+    padding: 22px;
+  }
+
+  .credits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fortefyre-quote {
+    font-size: 1.2rem;
+  }
+}
